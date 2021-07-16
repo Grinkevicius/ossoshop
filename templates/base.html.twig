@@ -42,9 +42,9 @@
 
                                 {% block header_navigation_links %}
                                     <li>
-                                        <a href="{{ path('blog_index') }}">
+                                        {# <a href="{{ path('blog_index') }}">
                                             <i class="fa fa-home" aria-hidden="true"></i> {{ 'menu.homepage'|trans }}
-                                        </a>
+                                        </a> #}
                                     </li>
 
                                     {% if is_granted('ROLE_ADMIN') %}
