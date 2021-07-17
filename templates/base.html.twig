@@ -20,13 +20,18 @@
             <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
             <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
             <link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+
+
             
             <style>
+
+			a, a:hover {
+			text-decoration:none!important;
+			}
+
             {% include 'css/main.css.twig' %}
             {% include 'css/util.css.twig' %}     
             </style>
-
-            
 
 
         {% block stylesheets %}
@@ -59,11 +64,14 @@
         {% endblock %}
     </head>
 
-    <body>
+	<body class="">
+
     	<!-- Header -->
 	<header class="header1">
 		<!-- Header desktop -->
 		<div class="container-menu-header">
+
+
 			{# <div class="topbar">
 				<div class="topbar-social">
 					<a href="https://www.facebook.com/OSSO-223766305171825" class="topbar-social-item fa fa-facebook"></a>
@@ -94,9 +102,10 @@
 				</div>
 			</div> #}
 
+
 			<div class="wrap_header">
 				<!-- Logo -->
-				<a href="index.html" class="logo">
+				<a href="{{ path('index') }}" class="logo">
                     <img src="/img/icons/logo.png" alt="logo!" />
 				</a>
 				
@@ -106,15 +115,15 @@
 					<nav class="menu">
 						<ul class="main_menu">
 							<li>
-								<a href="index.html">Pradžia</a>
+								<a href="{{ path('index') }}">Pradžia</a>
 							</li>
 
 							<li class="sale-noti">
-								<a href="akcijos.html">Išpardavimai</a>
+								<a href="{{ path('sale') }}">Išpardavimai</a>
 							</li>
 
 							<li>
-								<a href="kontaktai.html">Kontaktai</a>
+								<a href="{{ path('contacts') }}">Kontaktai</a>
 							</li>
 						</ul>
 					</nav>
@@ -175,7 +184,7 @@
 	</header>
 
 
-	<!-- Banner -->
+	{# <!-- Banner -->
 	 <center><section class="banner bgwhite p-t-40 p-b-40">
          <div class="container">
 		
@@ -191,7 +200,7 @@
 					
 			</div>
          </div>
-         </section></center>
+         </section></center> #}
 
 
 	{% block body %}{% endblock %}
@@ -204,7 +213,11 @@
 	<h4 class="s-text15 p-b-0 t-center">
 	Susisiekite su mumis
 	</h4>
-                                
+
+
+	
+
+
 <a href="https://www.facebook.com/OSSO-223766305171825" class="t-center color1 p-r-0 fa fa-facebook"></a>
 <a href="https://www.instagram.com/osso_brand/" class="t-center color1 p-r-0 fa fa-instagram"></a>
 <a href="https://wa.me/12392701982" class="t-center color1 p-r-0 fa fa-whatsapp"></a>
@@ -228,8 +241,9 @@
 		</span>
 	</div>
 
-	<!-- Container Selection1 -->
+	<!-- Container Selection -->
 	<div id="dropDownSelect1"></div>
+	<div id="dropDownSelect2"></div>
 
     </body>
 </html>

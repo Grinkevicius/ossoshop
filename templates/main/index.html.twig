@@ -4,11 +4,12 @@
 
 
 {% block body %}
-<section class="bgwhite p-t-45 p-b-58">
+<section class="bgwhite">
+
 		<div class="container">
 			<div class="sec-title p-b-22">
 				<h3 class="m-text5 t-center">
-					Laikrodžiai
+					Watches
 				</h3>
 			</div>
 
@@ -23,7 +24,7 @@
 						<a class="nav-link" data-toggle="tab" href="#sale" role="tab">Akcijos</a>
 					</li>-->
 					<li class="nav-item">
-						<a href="laikrodziai.html" role="tab">Visi</a>
+						<a href="{{ path('watches') }}" role="tab">Visi</a>
 					</li>
 				</ul>
 
@@ -273,7 +274,7 @@
                             
 
                             <div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
-                                <a href="laikrodziai.html">
+                                <a href="{{ path('watches') }}">
 				            <div class="block2">
                                     
 									<div class="block2-img wrap-pic-w of-hidden pos-relative">
@@ -283,7 +284,7 @@
 
 											<div class="block2-btn-addcart w-size1 trans-0-4">
 												<!-- Button -->
-                                                <a href="laikrodziai.html">
+                                                <a href="{{ path('watches') }}">
 												<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 													Visi laikrodžiai
 												</button>

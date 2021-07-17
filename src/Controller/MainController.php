@@ -23,4 +23,38 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+
+    #[Route('/sale', name: 'sale')]
+    public function sale(): Response
+    {
+        return $this->render('main/sale.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    #[Route('/contacts', name: 'contacts')]
+    public function contacts(): Response
+    {
+        return $this->render('main/contacts.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    #[Route('/watches', name: 'watches')]
+    public function watches(): Response
+    {
+        return $this->render('main/watches.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+
+    #[Route('/shop', name: 'shop')]
+    public function shop(): Response
+    {
+        return $this->render('main/shop.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
 }
