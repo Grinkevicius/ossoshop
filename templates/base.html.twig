@@ -25,6 +25,7 @@
             
             <style>
 
+
 			a, a:hover {
 			text-decoration:none!important;
 			}
@@ -38,8 +39,6 @@
         {#{{ encore_entry_link_tags('app') }}#}
         {% endblock %}
 
-            <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
-            <script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
             <script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
             <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
             <script type="text/javascript" src="vendor/select2/select2.min.js"></script>
@@ -54,7 +53,11 @@
             <script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
             <script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
             <script type="text/javascript" src="vendor/sweetalert/sweetalert.min.js"></script>
-            <script src="js/main.js"></script>
+            <script type="text/javascript" src="vendor/animsition/js/main.js"></script>
+			<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+			<script src="vendor/animsition/js/animsition.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 
         {% block javascripts %}
             {#{{ encore_entry_script_tags('app') }}#}
@@ -64,7 +67,7 @@
         {% endblock %}
     </head>
 
-	<body class="">
+		<body>
 
     	<!-- Header -->
 	<header class="header1">
@@ -115,15 +118,15 @@
 					<nav class="menu">
 						<ul class="main_menu">
 							<li>
-								<a href="{{ path('index') }}">Pradžia</a>
+								<a href="{{ path('index') }}">Home</a>
 							</li>
 
 							<li class="sale-noti">
-								<a href="{{ path('sale') }}">Išpardavimai</a>
+								<a href="{{ path('sale') }}">Sales</a>
 							</li>
 
 							<li>
-								<a href="{{ path('contacts') }}">Kontaktai</a>
+								<a href="{{ path('contacts') }}">Contacts</a>
 							</li>
 						</ul>
 					</nav>
@@ -211,8 +214,8 @@
 <!-- Footer -->	
 		<center><div class="bg6 t-center p-l-15 p-r-15">
 	<h4 class="s-text15 p-b-0 t-center">
-	Susisiekite su mumis
-	</h4>
+	Contact us:
+		</h4>
 
 
 	
@@ -222,9 +225,10 @@
 <a href="https://www.instagram.com/osso_brand/" class="t-center color1 p-r-0 fa fa-instagram"></a>
 <a href="https://wa.me/12392701982" class="t-center color1 p-r-0 fa fa-whatsapp"></a>
 <div class="t-center s-text9 p-t-2">
-<a href="https://www.osso-shop.lt"><img src="/img/iconfinder_Lithuania_92181.png" width="30" alt="LANG-LT"></a>
+{# <a href="https://www.osso-shop.lt"><img src="/img/iconfinder_Lithuania_92181.png" width="30" alt="LANG-LT"></a>
 <a href="https://www.osso-shop.lt/en"><img src="/img/iconfinder_United-States_flat_92406.png" width="30" alt="LANG-EN"></a>
-			</div>			
+						 #}
+			</div>
 		<div class="t-center s-text9 p-t-5">
 				&copy;ØSSØ 2019</a>
 			</div> 
